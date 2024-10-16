@@ -1,0 +1,68 @@
+@import '../../scss/main';
+
+.header_main {
+    .header_top_main {
+        background-color: #121212;
+
+        .header_top {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 15px 0;
+            color: #FFF;
+
+            .header_left {
+                display: flex;
+                gap: 30px;
+            }
+
+            .call {
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        .header_right {
+            display: flex;
+            gap: 20px;
+            .social_media{
+                display: flex;
+                gap: 10px;
+                padding-right: 20px;
+                border-right: 1px solid rgba(255, 255, 255, 0.35);
+                .fb{
+                    padding: 5px;
+                    background-color: #FFFFFF26;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    img{
+
+                    }
+                }
+            }
+
+            .language{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .language_text{
+                    select{
+                        background-color: transparent;
+                        color: white;
+                        border: none;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+
+            .login{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+}
