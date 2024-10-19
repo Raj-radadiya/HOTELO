@@ -7,6 +7,7 @@
         .header_top {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             gap: 30px;
             padding: 15px 0;
             color: #FFF;
@@ -19,35 +20,46 @@
             .call {
                 display: flex;
                 gap: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 15px;
+                }
             }
         }
 
         .header_right {
             display: flex;
             gap: 20px;
-            .social_media{
+
+            .social_media {
                 display: flex;
                 gap: 10px;
                 padding-right: 20px;
                 border-right: 1px solid rgba(255, 255, 255, 0.35);
-                .fb{
-                    padding: 5px;
+
+                .fb {
+                    padding: 8px;
                     background-color: #FFFFFF26;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
-                    img{
 
+                    img {
+                        height: 14px;
+                        box-sizing: border-box;
                     }
                 }
             }
 
-            .language{
+            .language {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                .language_text{
-                    select{
+
+                .language_text {
+                    select {
                         background-color: transparent;
                         color: white;
                         border: none;
@@ -57,10 +69,70 @@
             }
 
 
-            .login{
+            .login {
                 display: flex;
                 align-items: center;
                 gap: 10px;
+            }
+        }
+    }
+
+
+    .header_bottom {
+        background-color: var(--background-color);
+
+        .header_bottom_main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .header_bottom_right {
+                display: flex;
+                align-items: center;
+
+                .nav_link {
+                    display: flex;
+                    gap: 45px;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 17px;
+                    }
+                }
+
+                .header_btn {
+                    display: flex;
+                    gap: 20px;
+                    padding: 20px 0;
+                    margin-left: 30px;
+
+                    .search_btn {
+                        padding: 15px 20px;
+                        border-radius: 15px 0;
+                        border: 1px solid var(--border-color);
+                        display: flex;
+                        justify-content: space-between;
+                        color: var(--font-color);
+                        align-items: center;
+                        p{
+                            display: block;
+                            padding-right: 100px;
+                        }
+                    }
+
+                    .book_btn {
+                        padding-right: 20px;
+                        button {
+                            padding: 20px 30px;
+                            border-radius: 15px 0;
+                            background-color: var(--hover-color);
+                            color: var(--font-color);
+                            border: none;
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }

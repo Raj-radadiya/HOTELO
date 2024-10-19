@@ -1,0 +1,64 @@
+@import '../../scss/main';
+
+.Slider {
+    overflow: hidden;
+
+    .slider_main {
+        position: relative;
+
+        .slider_image {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--slider-background);
+                opacity: var(--slider-opacity);
+            }
+
+            img {
+                height: 600px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .slider_text {
+            position: absolute;
+            top: 30%;
+            left: 20%;
+            text-align: center;
+
+            h5 {
+                text-transform: uppercase;
+                font-size: 20px;
+                color: var(--font-color);
+                letter-spacing: 4px;
+                padding-bottom: 20px;
+                @include font_family;
+            }
+
+            h2 {
+                font-size: 60px;
+                color: var(--font-color);
+                // text-align: center;
+                max-width: 920px;
+            }
+
+            button {
+                margin-top: 20px;
+                background-color: transparent;
+                padding: 20px 50px;
+                color: var(--font-color);
+                font-size: 16px;
+                border: 2px solid var(--font-color);
+                font-weight: 600;
+                border-radius: 30px;
+            }
+        }
+    }
+}
