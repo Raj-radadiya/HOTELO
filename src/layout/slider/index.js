@@ -1,16 +1,44 @@
-import React from 'react'
-import './Slider.scss';
+import React, { Component } from "react";
 import Slider from "react-slick";
+import './Slider.scss';
 import slider1 from '../../assets/image/slider-1.jpg';
 import slider2 from '../../assets/image/slider-2.jpg';
 import slider3 from '../../assets/image/slider-3.jpg';
+import left from '../../assets/icon/icons8-left-20.png';
+import right from '../../assets/icon/icons8-right-20.png';
+
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className='left'
+            onClick={onClick}
+        >
+            <img src={left} alt="left" />
+        </div>
+    );
+}
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className='right_arrow'
+            onClick={onClick}
+        >
+            <img src={right} alt="right" />
+        </div>
+    );
+}
 export default function SLIDER() {
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
     return (
         <div>
@@ -24,7 +52,7 @@ export default function SLIDER() {
                             <div className='slider_text'>
                                 <h5>Welcome To Our Hotel</h5>
                                 <h2>Imagine a place where you can be yourself.</h2>
-                                <button>About Us</button>
+                                <button className="slider_btn">About Us</button>
                             </div>
                         </div>
                         <div className='slider_main'>
@@ -34,7 +62,7 @@ export default function SLIDER() {
                             <div className='slider_text'>
                                 <h5>Welcome To Our Resort</h5>
                                 <h2>Choose us once, and you will choose us always.</h2>
-                                <button>Booking</button>
+                                <button className="slider_btn">Booking</button>
                             </div>
                         </div>
                         <div className='slider_main'>
@@ -44,7 +72,7 @@ export default function SLIDER() {
                             <div className='slider_text'>
                                 <h5>Welcome To Our Motel</h5>
                                 <h2>Where friends and family will always feel at home!</h2>
-                                <button>Contact Us</button>
+                                <button className="slider_btn">Contact Us</button>
                             </div>
                         </div>
 

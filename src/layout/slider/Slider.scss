@@ -1,13 +1,57 @@
 @import '../../scss/main';
+.slick-list{
+    margin: -4px 0;
+}
+.left {
+    :hover {
+        background-color: var(--hover-color);
+        transition: 0.3s ease-in-out;
+    }
+
+    img {
+        border: 2px solid white;
+        padding: 15px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        background-color: transparent;
+        z-index: 1;
+
+    }
+}
+
+.right_arrow {
+    // display: none;
+    :hover {
+        background-color: var(--hover-color);
+        transition: 0.3s ease-in-out;
+    }
+
+    img {
+        border: 2px solid white;
+        padding: 15px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: 4%;
+        background-color: transparent;
+        z-index: 1;
+    }
+}
 
 .Slider {
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 
     .slider_main {
         position: relative;
-
+        margin: 0;
+        padding: 0;
         .slider_image {
             position: relative;
+            margin: 0;
 
             &::before {
                 content: '';
@@ -25,6 +69,7 @@
                 width: 100%;
                 object-fit: cover;
             }
+
         }
 
         .slider_text {
@@ -32,6 +77,7 @@
             top: 30%;
             left: 20%;
             text-align: center;
+            margin: 0;
 
             h5 {
                 text-transform: uppercase;
@@ -58,6 +104,12 @@
                 border: 2px solid var(--font-color);
                 font-weight: 600;
                 border-radius: 30px;
+
+                &:hover {
+                    background-color: var(--hover-color);
+                    transition: 0.3s ease-in-out;
+                    border:2px solid var(--hover-color);
+                }
             }
         }
     }
