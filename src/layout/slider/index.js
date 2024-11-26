@@ -44,7 +44,7 @@ export default function SLIDER() {
         <div>
             <div className='Slider'>
                 <div className="slider-container">
-                    <Slider {...settings}>
+                <Slider {...settings}>
                         <div className='slider_main'>
                             <div className='slider_image'>
                                 <img src={slider1} alt='slider1' />

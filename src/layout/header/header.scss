@@ -26,7 +26,8 @@
                     color: white;
                     font-size: 15px;
                 }
-                a:hover{
+
+                a:hover {
                     color: var(--hover-color);
                     transition: 0.3s ease-in-out;
                 }
@@ -49,10 +50,16 @@
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
+                    transition: transform 0.3s ease-in-out;
 
                     img {
                         height: 14px;
                         box-sizing: border-box;
+                    }
+
+                    &:hover{
+                        transform: translateY(-5px);
+                        background-color: var(--hover-color);
                     }
                 }
             }
@@ -77,6 +84,11 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
+
+                span:hover {
+                    color: var(--hover-color);
+                    transition: 0.3s ease-in-out;
+                }
             }
         }
     }
@@ -103,7 +115,8 @@
                         color: white;
                         font-size: 17px;
                     }
-                    a:hover{
+
+                    a:hover {
                         color: var(--hover-color);
                         transition: 0.3s ease-in-out;
                     }

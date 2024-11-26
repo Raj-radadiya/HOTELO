@@ -1,7 +1,9 @@
 @import '../../scss/main';
-.slick-list{
+
+.slick-list {
     margin: -4px 0;
 }
+
 .left {
     :hover {
         background-color: var(--hover-color);
@@ -22,7 +24,7 @@
 }
 
 .right_arrow {
-    // display: none;
+
     :hover {
         background-color: var(--hover-color);
         transition: 0.3s ease-in-out;
@@ -42,16 +44,12 @@
 
 .Slider {
     overflow: hidden;
-    margin: 0;
-    padding: 0;
 
     .slider_main {
         position: relative;
-        margin: 0;
-        padding: 0;
+
         .slider_image {
             position: relative;
-            margin: 0;
 
             &::before {
                 content: '';
@@ -108,9 +106,25 @@
                 &:hover {
                     background-color: var(--hover-color);
                     transition: 0.3s ease-in-out;
-                    border:2px solid var(--hover-color);
+                    border: 2px solid var(--hover-color);
                 }
             }
         }
     }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slick-slide.slick-active .slider_text {
+    animation: fadeInLeft 0.5s ease-in-out;
 }
