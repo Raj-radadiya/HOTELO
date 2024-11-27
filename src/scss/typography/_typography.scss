@@ -1,13 +1,20 @@
-@mixin header_top_a{
+@mixin header_top_a {
     font-size: 15px;
 }
-@mixin h2{
+
+@mixin h2 {
     font-size: 40px;
     padding-bottom: 15px;
 }
-@mixin card_p{
+
+@mixin card_p {
     font-size: 16px;
 }
-@mixin font_family{
+
+@mixin font_family {
     font-family: "Readex Pro", sans-serif;
+}
+
+@mixin flex {
+    display: flex;
 }

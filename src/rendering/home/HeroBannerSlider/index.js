@@ -19,7 +19,7 @@ export default function Herobanner() {
               <input type='text' placeholder='Check Out' />
             </div>
             <div className='adult'>
-              <select>
+              <select className='adult_select'>
                 <option>Adult</option>
                 <option>1</option>
                 <option>2</option>
@@ -31,7 +31,7 @@ export default function Herobanner() {
               </select>
             </div>
             <div className='adult'>
-              <select>
+              <select className='adult_select'>
                 <option>Childs</option>
                 <option>1</option>
                 <option>2</option>
@@ -43,7 +43,7 @@ export default function Herobanner() {
               </select>
             </div>
             <div className='adult'>
-              <select>
+              <select className='adult_select'>
                 <option>Rooms</option>
                 <option>1</option>
                 <option>2</option>

@@ -8,17 +8,17 @@
     position: relative;
     margin-top: -60px !important;
     z-index: 3;
-    
+
     .availability_box {
         display: flex;
         background-color: var(--background-color-main);
         gap: 30px;
-        // margin: 0;
         padding: 30px;
 
         .check_in {
             width: 22%;
-            
+            height: 100%;
+
             input {
                 border: 1px solid var(--border-color);
                 background-color: transparent;
@@ -27,7 +27,7 @@
                 font-weight: 600;
                 font-size: 14px;
 
-                &:focus{
+                &:focus {
                     border: 1px solid var(--hover-color);
                     outline: none;
                 }
@@ -36,39 +36,48 @@
 
         .adult {
             width: 15%;
-            display: flex;
-            justify-content: space-between;
-            height: 100%;
-            border: 1px solid var(--border-color);
+            height: auto;
 
-            select {
-                padding: 17px 20px;
-                width: 100%;
-                height: 100%;
-                font-size: 16px;
-                color: white;
-                // padding: 10px 5px;
-                background-color: var(--background-color-main);
-                background-image: url('../../../assets/icon/icons8-down-20.png');
+            .adult_select {
+                background-image: url(../../../assets/icon/select-icon-black.png);
+                background-color: transparent;
+                border: 1px solid var(--border-color);
+                color: var(--font-color);
                 background-position: 100%;
                 background-repeat: no-repeat;
-                &:focus{
+                padding: 15px 20px;
+                width: 100%;
+                border-radius: 0;
+                height: 100%;
+
+                option {
+                    color: var(--font-color);
+                    background-color: var(--background-color-main);
+                }
+
+                &:focus {
+                    transition: 0.1s ease-in-out;
                     border: 1px solid var(--hover-color);
                     outline: none;
-                    transition: 0.1s ease-in-out;
                 }
             }
         }
 
         .availablity_btn {
             width: 16%;
-            button{
+
+            button {
                 padding: 17px 30px;
                 font-size: 16px;
                 background-color: var(--hover-color);
                 color: white;
                 border: none;
                 width: 100%;
+
+                &:hover {
+                    background-color: var(--btn-hover);
+                    transition: all 0.7s ease-in-out;
+                }
             }
         }
     }

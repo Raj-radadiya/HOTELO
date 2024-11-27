@@ -11,6 +11,7 @@ import earth from '../../assets/icon/icons8-earth-20.png';
 import man from '../../assets/icon/icons8-man-20.png';
 import logo from '../../assets/logo/logo-dark.png';
 import search from '../../assets/icon/icons8-search-20.png';
+import down from '../../assets/icon/down.png'
 export default function Header() {
   return (
     <div>
@@ -63,11 +64,18 @@ export default function Header() {
                 <div className='language'>
                   <img src={earth} alt='earth' />
                   <div className='language_text'>
-                    <select>
-                      <option>Eng</option>
-                      <option>Eng</option>
-                      <option>Eng</option>
-                    </select>
+                    <div className='languageBtn'>
+                      <button>english</button>
+                      <img src={down} alt='img' />
+                    </div>
+                    <div className='hiden'>
+                      <p>eng</p>
+                      <p>ger</p>
+                      <p>fra</p>
+                      <p>spa</p>
+                      <p>rus</p>
+                      <p>ita</p>
+                    </div>
                   </div>
                 </div>
 

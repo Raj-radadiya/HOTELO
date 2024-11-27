@@ -2,7 +2,7 @@
 
 .header_main {
     .header_top_main {
-        background-color: #121212;
+        background-color: var(--header-background-color);
 
         .header_top {
             display: flex;
@@ -10,7 +10,7 @@
             align-items: center;
             gap: 30px;
             padding: 15px 0;
-            color: #FFF;
+            color: var(--font-color);
 
             .header_left {
                 display: flex;
@@ -23,7 +23,7 @@
 
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: var(--font-color);
                     font-size: 15px;
                 }
 
@@ -42,22 +42,23 @@
                 display: flex;
                 gap: 10px;
                 padding-right: 20px;
-                border-right: 1px solid rgba(255, 255, 255, 0.35);
+                border-right: 1px solid var(--header-border-color);
 
                 .fb {
                     padding: 8px;
-                    background-color: #FFFFFF26;
+                    background-color: var(--light-gray-color);
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     transition: transform 0.3s ease-in-out;
+                    cursor: pointer;
 
                     img {
                         height: 14px;
                         box-sizing: border-box;
                     }
 
-                    &:hover{
+                    &:hover {
                         transform: translateY(-5px);
                         background-color: var(--hover-color);
                     }
@@ -68,16 +69,54 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                position: relative;
 
                 .language_text {
-                    select {
-                        background-color: transparent;
-                        color: white;
-                        border: none;
-                        font-size: 14px;
+                    position: relative;
+
+                    .languageBtn {
+                        @include flex;
+                        gap: 5px;
+
+                        button {
+                            background-color: transparent;
+                            color: var(--font-color);
+                            border: none;
+                        }
+                    }
+
+                    .hiden {
+                        background-color: var(--font-color);
+                        display: none;
+                        position: absolute;
+                        top: 40px;
+                        left: 0;
+                        width: 100%;
+                        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                        z-index: 9;
+                        width: 130px;
+
+                        p {
+                            color: var(--background-color);
+                            padding: 6px 11px 0;
+                            text-transform: capitalize;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: var(--light-blue);
+                            }
+                        }
+                    }
+
+                    &:focus-within .hiden {
+                        display: block;
                     }
                 }
+
             }
+
+
+
 
 
             .login {
@@ -88,6 +127,7 @@
                 span:hover {
                     color: var(--hover-color);
                     transition: 0.3s ease-in-out;
+                    cursor: pointer;
                 }
             }
         }
@@ -95,7 +135,8 @@
 
 
     .header_bottom {
-        background-color: var(--background-color);
+        background-color: var(--navbar-bg);
+
 
         .header_bottom_main {
             display: flex;
@@ -112,7 +153,7 @@
 
                     a {
                         text-decoration: none;
-                        color: white;
+                        color: var(--font-color);
                         font-size: 17px;
                     }
 
@@ -151,11 +192,22 @@
                             color: var(--font-color);
                             border: none;
                             font-size: 16px;
+
+                            &:hover {
+                                background-color: var(--btn-hover);
+                                transition: 0.3s ease-in-out;
+
+                            }
                         }
+
                     }
                 }
             }
         }
     }
 
+}
+
+.import {
+    width: 100% !important;
 }
