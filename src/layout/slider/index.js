@@ -4,15 +4,15 @@ import './Slider.scss';
 import slider1 from '../../assets/image/slider-1.jpg';
 import slider2 from '../../assets/image/slider-2.jpg';
 import slider3 from '../../assets/image/slider-3.jpg';
-import left from '../../assets/icon/icons8-left-20.png';
-import right from '../../assets/icon/icons8-right-20.png';
+import left from '../../assets/icon/icons8-back-14.png';
+import right from '../../assets/icon/icons8-more-than-14.png';
 
 
 function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
         <div
-            className='left'
+            className='sliderLeftArrow'
             onClick={onClick}
         >
             <img src={left} alt="left" />
@@ -23,7 +23,7 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
         <div
-            className='right_arrow'
+            className='sliderRightArrow'
             onClick={onClick}
         >
             <img src={right} alt="right" />
@@ -51,7 +51,7 @@ export default function SLIDER() {
                             </div>
                             <div className='slider_text'>
                                 <h5>Welcome To Our Hotel</h5>
-                                <h2>Imagine a place where you can be yourself.</h2>
+                                <h2>Imagine a place where you ca be yourself.</h2>
                                 <button className="slider_btn">About Us</button>
                             </div>
                         </div>

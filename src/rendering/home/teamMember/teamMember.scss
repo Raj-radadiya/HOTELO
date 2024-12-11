@@ -1,0 +1,53 @@
+@import '../../../scss/main';
+
+.mainsection2 {
+    .sectionTitle {
+        @include sectionTitle;
+    }
+
+    .gridFour {
+        @include gridFour;
+
+        .memberDetails {
+            .memberImg {
+                height: 320px;
+                cursor: pointer;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .memberDetails {
+                .memberName {
+                    h3 {
+                        @include h3;
+                    }
+                }
+
+                .memberDesignation {
+                    span {
+                        @include span;
+                    }
+                }
+            }
+
+            .memberDetailsInfo {
+                background-color: var(--background-color-main);
+                padding: 25px 25px 15px;
+
+                .memberName {
+                    h3 {
+                        @include h3;
+                    }
+                }
+
+                .memberDesignation {
+                    span {
+                        @include span;
+                    }
+                }
+            }
+        }
+    }
+}

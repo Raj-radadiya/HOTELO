@@ -1,0 +1,82 @@
+@mixin gridThree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+@mixin gridFour{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+@mixin justifyBetween {
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin sectionTitle {
+    position: relative;
+
+    .sectionTitle {
+        max-width: 850px;
+        margin: 0 auto 50px;
+        text-align: center;
+        position: relative;
+
+        h2 {
+            @include sectionH2;
+        }
+
+        p {
+            @include sectionP;
+        }
+
+        &::after {
+            width: 215px;
+            height: 4px;
+            background: var(--hover-color);
+            position: absolute;
+            content: "";
+            bottom: -30px;
+            right: 38%;
+        }
+    }
+}
+
+@mixin viewDetails {
+    button {
+        padding: 8px 24px;
+        background-color: var(--hover-color);
+        border-radius: 4px;
+        font-weight: 400;
+        color: var(--font-color);
+        border: none;
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    :hover {
+        background-color: var(--background-color);
+    }
+}
+
+@mixin bookNow {
+    button {
+        padding: 8px 24px;
+        background-color: var(--background-color);
+        border-radius: 4px;
+        font-weight: 400;
+        color: var(--font-color);
+        border: none;
+        line-height: 26px;
+        font-size: 16px;
+        text-transform: capitalize;
+        transition: all 0.7s ease-in-out;
+    }
+
+    :hover {
+        background-color: var(--hover-color);
+        transition: all 0.7s ease-in-out;
+    }
+}

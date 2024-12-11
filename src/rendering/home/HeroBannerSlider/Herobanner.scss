@@ -30,6 +30,7 @@
                 &:focus {
                     border: 1px solid var(--hover-color);
                     outline: none;
+                    transition: all 0.7s ease-in-out;
                 }
             }
         }

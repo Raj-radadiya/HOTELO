@@ -2,11 +2,6 @@
     font-size: 15px;
 }
 
-@mixin h2 {
-    font-size: 40px;
-    padding-bottom: 15px;
-}
-
 @mixin card_p {
     font-size: 16px;
 }
@@ -15,6 +10,56 @@
     font-family: "Readex Pro", sans-serif;
 }
 
+@mixin span{
+    font-size: 15px;
+}
 @mixin flex {
     display: flex;
+}
+
+@mixin h5 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--font-color);
+    letter-spacing: 4px;
+    padding-bottom: 20px;
+    @include font_family;
+}
+
+@mixin h2 {
+    font-size: 60px;
+    color: var(--font-color);
+    max-width: 920px;
+}
+
+@mixin sectionH2 {
+    font-size: 40px;
+    margin: 0 0 15px;
+    @include font_family;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+@mixin sectionP {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+@mixin h3{
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+@mixin h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+@mixin mainsection {
+    padding: 60px 0;
+}
+
+@mixin mainsection2 {
+    padding: 0 0 60px;
 }

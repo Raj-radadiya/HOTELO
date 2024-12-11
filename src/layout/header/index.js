@@ -11,7 +11,13 @@ import earth from '../../assets/icon/icons8-earth-20.png';
 import man from '../../assets/icon/icons8-man-20.png';
 import logo from '../../assets/logo/logo-dark.png';
 import search from '../../assets/icon/icons8-search-20.png';
-import down from '../../assets/icon/down.png'
+import down from '../../assets/icon/down.svg';
+import us from '../../assets/icon/usFlag.jpg';
+import Germany from '../../assets/icon/germany.jpg';
+import France from '../../assets/icon/francia.jpg';
+import spanish from '../../assets/icon/spain.jpg';
+import russia from '../../assets/icon/russia.jpg';
+import Italy from '../../assets/icon/italy.jpg';
 export default function Header() {
   return (
     <div>
@@ -69,12 +75,30 @@ export default function Header() {
                       <img src={down} alt='img' />
                     </div>
                     <div className='hiden'>
-                      <p>eng</p>
-                      <p>ger</p>
-                      <p>fra</p>
-                      <p>spa</p>
-                      <p>rus</p>
-                      <p>ita</p>
+                      <div className='flex'>
+                        <img src={us} alt='us' />
+                        <a href='#'>Eng</a>
+                      </div>
+                      <div className='flex'>
+                        <img src={Germany} alt='us' />
+                        <a href='#'>ger</a>
+                      </div>
+                      <div className='flex'>
+                        <img src={France} alt='us' />
+                        <a href='#'>Fra</a>
+                      </div>
+                      <div className='flex'>
+                        <img src={spanish} alt='us' />
+                        <a href='#'>Spa</a>
+                      </div>
+                      <div className='flex'>
+                        <img src={russia} alt='us' />
+                        <a href='#'>Rus</a>
+                      </div>
+                      <div className='flex'>
+                        <img src={Italy} alt='us' />
+                        <a href='#'>Ita</a>
+                      </div>
                     </div>
                   </div>
                 </div>

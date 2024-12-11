@@ -1,0 +1,54 @@
+@import '../../../scss/main';
+
+.mainsection {
+    @include mainsection;
+
+    .sectionTitle {
+        @include sectionTitle;
+    }
+
+
+    .questionMain {
+        @include flex;
+        gap: 40px;
+        align-items: center;
+
+        .questionLeft {
+            width: 50%;
+
+            .justifyBetween {
+                @include justifyBetween;
+                background-color: var(--background-color-main);
+                padding: 20px 40px 17px 25px;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin: 20px 0;
+
+                &:hover {
+                    color: var(--hover-color);
+                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+
+        .questionRight {
+            width: 50%;
+
+            .justifyBetween {
+                @include justifyBetween;
+                background-color: var(--background-color-main);
+                padding: 20px 40px 17px 25px;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin: 20px 0;
+
+                &:hover {
+                    color: var(--hover-color);
+                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}
