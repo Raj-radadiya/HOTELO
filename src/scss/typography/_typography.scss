@@ -10,9 +10,10 @@
     font-family: "Readex Pro", sans-serif;
 }
 
-@mixin span{
+@mixin span {
     font-size: 15px;
 }
+
 @mixin flex {
     display: flex;
 }
@@ -45,11 +46,12 @@
     line-height: 1.8;
 }
 
-@mixin h3{
+@mixin h3 {
     font-size: 18px;
     letter-spacing: 1.2px;
     margin-bottom: 8px;
 }
+
 @mixin h5 {
     font-size: 20px;
     font-weight: 600;

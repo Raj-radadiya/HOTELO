@@ -4,6 +4,7 @@ import RoomCard from './roomCard'
 import Queation from './userquestion'
 import CustomerReview from './customerReview'
 import TeamMember from './teamMember'
+import BlogCard from './blog'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Queation/>
       <CustomerReview/>
       <TeamMember/>
+      <BlogCard/>
     </div>
   )
 }
