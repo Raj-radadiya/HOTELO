@@ -1,0 +1,171 @@
+@import '../../../scss/main';
+
+.mainsection2 {
+    .sectionTitle {
+        @include sectionTitle;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .mainsection2 {
+
+        .memberDetails {
+            padding: 50px 0 0;
+
+            .memberImg {
+                height: 320px;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    height: 100%;
+                }
+
+                .social_media {
+                    position: absolute;
+                    bottom: 25px;
+                    right: 20px;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    color: var(--background-color-main);
+
+                    .fb {
+                        padding: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 2px;
+                        background-color: var(--font-color);
+                        transform: rotateX(90deg);
+                        transition: 0.3s ease-in-out;
+
+                        img {
+                            height: 14px;
+                            width: auto;
+                            box-sizing: border-box;
+                        }
+
+                        &:hover {
+                            transition: 0.2s ease-in-out;
+                            background-color: var(--hover-color);
+                            color: var(--font-color);
+                        }
+                    }
+
+                    .tw {
+                        padding: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 2px;
+                        background-color: var(--font-color);
+                        transform: rotateY(90deg);
+                        transition: 0.3s ease-in-out;
+
+                        img {
+                            height: 14px;
+                            width: auto;
+                            box-sizing: border-box;
+                        }
+
+                        &:hover {
+                            transition: 0.2s ease-in-out;
+                            background-color: var(--hover-color);
+                            color: var(--font-color);
+                        }
+                    }
+                }
+            }
+
+            .memberDetailsInfo {
+                position: relative;
+                background-color: var(--background-color-main);
+                padding: 25px 25px 15px;
+
+                .memberShare {
+                    padding: 8px;
+                    background-color: var(--hover-color);
+                    position: absolute;
+                    top: -15px;
+                    right: 20px;
+                    border-radius: 2px;
+                    @include flex;
+                    justify-content: center;
+                    transition: background-color 0.3s ease-in-out;
+                }
+
+                .memberName {
+                    h3 {
+                        @include h3;
+                    }
+                }
+
+                .memberDesignation {
+                    span {
+                        @include span;
+                    }
+                }
+            }
+
+            &:hover .social_media .fb {
+                transform: rotateX(0);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &:hover .social_media .tw {
+                transform: rotateY(0);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &:hover .memberShare {
+                background-color: var(--background-color-main);
+            }
+        }
+    }
+
+    .slick-dots {
+        bottom: -65px;
+
+        li {
+            padding: 0 !important;
+            width: 40px;
+
+            button {
+                &::before {
+                    background-color: var(--slider-dots);
+                    opacity: 3;
+                    content: "";
+                    height: 5px;
+                    width: 30px;
+                    border-radius: 4px;
+                    margin: 0 6px;
+                }
+            }
+        }
+
+        .slick-active {
+            width: 40px;
+
+            button {
+                &::before {
+                    margin: 0 6px;
+                    width: 30px;
+                    height: 5px;
+                    border-radius: 4px;
+                    background-color: var(--hover-color);
+                    content: "";
+                    opacity: 3;
+                }
+            }
+        }
+    }
+}

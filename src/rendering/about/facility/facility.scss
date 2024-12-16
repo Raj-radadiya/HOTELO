@@ -1,0 +1,139 @@
+@import '../../../scss/main';
+
+
+.mainsection {
+    @include mainsection;
+
+    .aboutFlex {
+        @include flex;
+        gap: 40px;
+
+        .aboutLeft {
+            width: 50%;
+
+            span {
+                @include sectionSpan;
+            }
+
+            h2 {
+                @include sectionH2;
+                margin: 0 0 20px;
+            }
+
+            p {
+                @include sectionP;
+                margin: 0 0 30px;
+            }
+
+            .aboutSpecification {
+                margin: 0 0 35px;
+
+                .specification {
+                    @include flex;
+                    gap: 15px;
+                    align-items: center;
+                    margin: 0 0 15px;
+
+                    .tick {
+                        height: 25px;
+                        width: 25px;
+                        border-radius: 50%;
+                        background-color: var(--font-color);
+                        padding: 5px;
+                        transition: all 0.5s;
+                        color: black;
+                    }
+
+                    span {
+                        font-weight: 600;
+                    }
+
+                    &:hover .tick {
+                        background-color: var(--hover-color);
+                        transition: all 0.5s ease-in-out;
+                        transform: rotateY(360deg);
+                        color: var(--font-color);
+                    }
+                }
+            }
+
+            .contactBtn {
+                button {
+                    padding: 15px 30px;
+                    font-size: 16px;
+                    background-color: transparent;
+                    color: var(--font-color);
+                    border: 1px solid var(--hover-color);
+
+                    &:hover {
+                        background-color: var(--hover-color);
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .aboutRight {
+            width: 50%;
+            background-image: url(../../../assets/image/aboutImg.webp);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .aboutImg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                background-color: var(--hover-color);
+                border-radius: 50%;
+                position: relative;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                    z-index: 2;
+                }
+
+                &::after,
+                &::before {
+                    animation: blink 1.6s ease-out infinite;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(0);
+                    width: 70px;
+                    height: 70px;
+                    background-color: var(--hover-color);
+                    border-radius: 50%;
+                    z-index: 1;
+                }
+            }
+        }
+
+    }
+}
+
+@keyframes blink {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}

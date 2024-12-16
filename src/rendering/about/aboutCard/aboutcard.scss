@@ -1,0 +1,54 @@
+@import '../../../scss/main';
+
+.aboutCards {
+    background-color: var(--light-gray);
+
+    .mainsection {
+        @include mainsection;
+        padding: 70px 0;
+
+        .cardFlex {
+            @include gridFour;
+
+            .aboutCard {
+                flex: 0 0 auto;
+                text-align: center;
+                background-color: var(--background-color);
+                padding: 30px;
+                align-items: center;
+                @include flex;
+                flex-direction: column;
+
+                .aboutCardImg {
+                    padding: 15px;
+                    background-color: var(--about-card-bg);
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    margin: 0 0 10px;
+                }
+
+                .aboutCardText {
+                    h2 {
+                        @include sectionH2;
+                        margin-bottom: 10px;
+                        letter-spacing: 3px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        letter-spacing: 1.2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.customerReview {
+    padding: 60px 0 0;
+}
+
+.mainsection {
+    @include mainsection;
+}

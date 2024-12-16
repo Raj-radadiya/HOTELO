@@ -3,7 +3,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
-@mixin gridFour{
+
+@mixin gridFour {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
@@ -78,5 +79,34 @@
     :hover {
         background-color: var(--hover-color);
         transition: all 0.7s ease-in-out;
+    }
+}
+
+@mixin pageTitle {
+    text-align: center;
+    background-color: var(--light-gray);
+    padding: 60px 0;
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    .pageSource {
+        @include flex;
+        align-items: center;
+        justify-content: center;
+
+        .pageName {
+            @include flex;
+            align-items: center;
+
+            img {
+                height: 20px;
+            }
+
+            p {
+                font-weight: 600;
+            }
+        }
     }
 }

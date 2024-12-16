@@ -13,6 +13,11 @@ img {
   margin: 0 auto;
 }
 
+.containerLg {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Spline Sans", sans-serif;
   background-color: #000;

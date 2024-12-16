@@ -1,0 +1,182 @@
+@import '../../../scss/main';
+
+.mainsection {
+    @include mainsection;
+
+    .formTitle {
+        text-align: center;
+        max-width: 850px;
+        margin: 0 auto;
+
+        h2 {
+            line-height: 1.5;
+            font-size: 35px;
+            margin: 0 0 15px;
+        }
+    }
+
+    .filterSectionMain {
+        padding: 40px 0;
+
+        .filtersection {
+            text-align: center;
+            border-bottom: 2px solid var(--font-color);
+
+            button {
+                font-size: 17px;
+                padding: 8px 16px;
+                background-color: transparent;
+                color: var(--font-color);
+                border: none;
+                margin: 0 10px -2px;
+                position: relative;
+
+                &:first-child {
+                    border-bottom: 2px solid var(--hover-color);
+                }
+
+                &:first-child::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    right: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    margin: auto;
+                    background-color: var(--hover-color);
+                }
+            }
+        }
+    }
+
+    .formTitle {
+        h2 {
+            margin: 10px 0 30px;
+        }
+    }
+
+    .formFlex {
+        @include flex;
+
+        .formName {
+            width: 50%;
+            padding: 0 20px;
+            margin: 24px 0 0;
+
+            label {
+                display: block;
+                margin: 0 0 10px;
+            }
+
+            input {
+                width: 100%;
+                padding: 15px 20px;
+                background-color: transparent;
+                border: 1px solid var(--border-color);
+                color: var(--font-color);
+
+                &::placeholder {
+                    color: var(--font-color);
+                    font-size: 16px;
+                }
+
+                &:focus {
+                    border: 1px solid var(--hover-color);
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .formRoom {
+        padding: 0 20px;
+        margin: 24px 0 0;
+
+        label {
+            display: block;
+            margin: 0 0 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 15px 20px;
+            background-color: var(--black-color);
+            border: 1px solid var(--border-color);
+            color: var(--font-color);
+            font-size: 16px;
+            background-image: url(../../../assets/icon/icons8-down-20.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            color: var(--font-color);
+
+            &:focus {
+                border: 1px solid var(--hover-color);
+                outline: none;
+            }
+
+        }
+    }
+
+    .formFlex {
+        @include flex;
+
+        .formName {
+            width: 50%;
+            padding: 0 20px;
+            margin: 24px 0 0;
+
+            label {
+                display: block;
+                margin: 0 0 10px;
+            }
+
+            input {
+                width: 100%;
+                padding: 15px 20px;
+                background-color: transparent;
+                border: 1px solid var(--border-color);
+                color: var(--font-color);
+
+                &::placeholder {
+                    color: var(--font-color);
+                    font-size: 16px;
+                }
+            }
+
+            select {
+                width: 100%;
+                padding: 15px 20px;
+                background-color: var(--black-color);
+                border: 1px solid var(--border-color);
+                color: var(--font-color);
+                font-size: 16px;
+                background-image: url(../../../assets/icon/icons8-down-20.png);
+                background-repeat: no-repeat;
+                background-position: right;
+                &:focus{
+                    border: 1px solid var(--hover-color);
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .formBtn {
+        @include flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 30px;
+        background-color: var(--light-gray);
+        margin: 24px 20px 0;
+        width: 163px;
+
+        .plusIcon {
+            img {
+                width: auto;
+                height: 20px;
+            }
+        }
+    }
+}

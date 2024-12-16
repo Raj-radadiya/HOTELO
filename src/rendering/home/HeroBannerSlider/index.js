@@ -1,7 +1,6 @@
 import React from 'react'
 import './Herobanner.scss'
 import SLIDER from '../../../layout/slider'
-import down from '../../../assets/icon/icons8-down-20.png';
 export default function Herobanner() {
   return (
     <div>

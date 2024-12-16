@@ -1,0 +1,89 @@
+@import '../../../scss/main';
+
+.mainsection {
+    @include mainsection;
+
+    .accountFlex {
+        @include flex;
+        gap: 40px;
+
+        .loginCard {
+            background-color: var(--light-gray);
+            width: 50%;
+            padding: 30px;
+            border-radius: 25px;
+            @include flex;
+            flex-direction: column;
+
+            .sectionTitle {
+                margin: 0 0 60px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 25%;
+                    height: 4px;
+                    background-color: var(--hover-color);
+                    bottom: -30px;
+                    right: 38%;
+                }
+
+                h2 {
+                    margin: 0;
+                }
+            }
+
+            .loginForm {
+                form {
+                    input {
+                        padding: 15px 20px;
+                        margin: 0 0 20px;
+                        width: 100%;
+                        background-color: transparent;
+                        color: var(--font-color);
+                        border: 1px solid var(--border-color);
+
+                        &:focus {
+                            border: 1px solid var(--hover-color);
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            color: var(--font-color);
+                            font-size: 16px;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .rememberPassword {
+                        @include flex;
+                        gap: 10px;
+                        margin: 0 0 20px;
+
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .loginBtn {
+                        button {
+                            padding: 16px 30px;
+                            background-color: var(--hover-color);
+                            border-radius: 4px;
+                            color: var(--font-color);
+                            border: none;
+                            font-size: 16px;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                background-color: var(--light-hover-color);
+                                transition: 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
