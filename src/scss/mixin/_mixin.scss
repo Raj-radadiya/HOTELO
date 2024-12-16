@@ -1,3 +1,8 @@
+@mixin gridTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 @mixin gridThree {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
