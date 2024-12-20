@@ -31,11 +31,11 @@
             align-items: center;
             display: flex;
             height: 40px;
+            width: 40px;
             justify-content: center;
             left: -5px;
             position: absolute;
             top: 45%;
-            width: 40px;
             background-color: var(--hover-color);
             border-radius: 50%;
             z-index: 1;
@@ -59,7 +59,8 @@
                     color: var(--background-color-main);
                     margin-bottom: 15px;
                     justify-content: center;
-                    img{
+
+                    img {
                         width: auto;
                     }
 

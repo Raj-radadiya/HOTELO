@@ -21,15 +21,17 @@
                 display: flex;
                 gap: 10px;
 
-                a {
-                    text-decoration: none;
-                    color: var(--font-color);
-                    font-size: 15px;
-                }
+                .callNo {
+                    a {
+                        text-decoration: none;
+                        color: var(--font-color);
+                        font-size: 15px;
+                    }
 
-                a:hover {
-                    color: var(--hover-color);
-                    transition: 0.3s ease-in-out;
+                    a:hover {
+                        color: var(--hover-color);
+                        transition: 0.3s ease-in-out;
+                    }
                 }
             }
         }
@@ -216,6 +218,7 @@
                 .header_btn {
                     display: flex;
                     gap: 20px;
+                    align-items: center;
                     padding: 20px 0;
                     margin-left: 30px;
 
@@ -251,9 +254,143 @@
                         }
 
                     }
+
+                    .line {
+                        display: none;
+                    }
                 }
             }
         }
     }
 
+}
+
+@media (max-width:768px) {
+    .header_main {
+        .header_top_main {
+            .header_top {
+                max-width: 768px;
+                padding: 15px 30px;
+                justify-content: space-between;
+
+                .header_left {
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .call {
+                        .callIcon {
+                            img {
+                                height: 15px;
+                                width: 15px;
+                            }
+                        }
+
+                    }
+                }
+
+                .header_right {
+                    flex-wrap: wrap;
+                    gap: initial;
+                    justify-content: center;
+
+                    .social_media {
+                        margin: 0 10px 0 0;
+                    }
+
+                    .language {
+                        .language_text {
+                            .hiden {
+                                left: 0;
+                                width: 95px;
+                            }
+                        }
+                    }
+
+                    .login {
+                        margin: 10px 0 0;
+                    }
+                }
+            }
+        }
+
+        .header_bottom {
+            padding: 0 30px;
+
+            .header_bottom_main {
+                .header_bottom_right {
+                    .nav_link {
+                        display: none;
+                    }
+
+                    .header_btn {
+                        .search_btn {
+                            border: none;
+
+                            p {
+                                display: none;
+                            }
+                        }
+
+                        .book_btn {
+                            display: none;
+                        }
+
+                        .line {
+                            display: block;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .header_main {
+        .header_top_main {
+            .header_top {
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+
+                .header_left {
+                    gap: 15px;
+                    justify-content: center;
+                }
+
+                .header_right {
+                    .login {
+                        margin: 15px 0 0;
+                    }
+                }
+            }
+        }
+
+        .header_bottom {
+            padding: 0 20px;
+
+            .header_bottom_main {
+                .header_logo {
+                    height: 60px;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .header_bottom_right {
+                    .header_btn {
+                        gap: 0px;
+
+                        .search_btn {
+                            img {
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

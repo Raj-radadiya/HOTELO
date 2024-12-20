@@ -46,6 +46,7 @@
                 .roomRating {
                     @include flex;
                     gap: 3px;
+
                     img {
                         height: 15px;
                         width: 15px;
@@ -104,5 +105,11 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width:768px) {
+    .roomCard {
+        padding: 0 20px;
     }
 }

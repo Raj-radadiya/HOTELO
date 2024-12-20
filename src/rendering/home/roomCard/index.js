@@ -51,7 +51,18 @@ export default function RoomCard() {
     slidesToShow: 3,
     slidesToScroll: 3,
     nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+    ]
   };
   return (
     <div>

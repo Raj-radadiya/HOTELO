@@ -12,20 +12,23 @@
     .availability_box {
         display: flex;
         background-color: var(--background-color-main);
-        gap: 30px;
-        padding: 30px;
+        padding: 30px 20px;
+        flex-wrap: wrap;
 
         .check_in {
-            width: 22%;
+            width: 20.50%;
             height: 100%;
+            flex: 0 0 auto;
+            padding: 0 20px;
 
             input {
                 border: 1px solid var(--border-color);
                 background-color: transparent;
-                padding: 17px 30px;
+                padding: 15px 20px;
                 color: white;
                 font-weight: 600;
                 font-size: 14px;
+                width: 100%;
 
                 &:focus {
                     border: 1px solid var(--hover-color);
@@ -36,8 +39,10 @@
         }
 
         .adult {
-            width: 15%;
+            width: 14%;
             height: auto;
+            padding: 0 20px;
+            flex: 0 0 auto;
 
             .adult_select {
                 background-image: url(../../../assets/icon/select-icon-black.png);
@@ -65,7 +70,8 @@
         }
 
         .availablity_btn {
-            width: 16%;
+            width: 16.66%;
+            flex: 0 0 auto;
 
             button {
                 padding: 17px 30px;
@@ -79,6 +85,52 @@
                     background-color: var(--btn-hover);
                     transition: all 0.7s ease-in-out;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .availablity_main {
+        padding: 0 30px;
+        .availability_box {
+            gap: 20px;
+
+            .check_in {
+                width: 40%;
+            }
+
+            .adult {
+                width: 26%;
+            }
+
+            .availablity_btn {
+                padding: 0 20px;
+                width: 24%;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .availablity_main {
+        .availability_box {
+            gap: 10px;
+
+            .check_in {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            .adult {
+                width: 100%;
+            }
+
+            .availablity_btn {
+                width: 100%;
             }
         }
     }

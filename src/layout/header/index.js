@@ -18,6 +18,7 @@ import France from '../../assets/icon/francia.jpg';
 import spanish from '../../assets/icon/spain.jpg';
 import russia from '../../assets/icon/russia.jpg';
 import Italy from '../../assets/icon/italy.jpg';
+import line from '../../assets/icon/ic--round-menu.svg';
 export default function Header() {
   return (
     <div>
@@ -27,26 +28,26 @@ export default function Header() {
             <div className='header_top'>
               <div className='header_left'>
                 <div className='call'>
-                  <div>
+                  <div className='callIcon'>
                     <img src={call} alt='call' />
                   </div>
-                  <div>
+                  <div className='callNo'>
                     <a href='#'>+12 345 678 999</a>
                   </div>
                 </div>
                 <div className='call'>
-                  <div>
+                  <div className='callIcon'>
                     <img src={mail} alt='mail' />
                   </div>
-                  <div>
+                  <div className='callNo'>
                     <a href='#'>hello@example.com</a>
                   </div>
                 </div>
                 <div className='call'>
-                  <div>
+                  <div className='callIcon'>
                     <img src={location} alt='location' />
                   </div>
-                  <div>
+                  <div className='callNo'>
                     <a href='#'>123 Western Road Melbourne, UK.</a>
                   </div>
                 </div>
@@ -133,6 +134,9 @@ export default function Header() {
                   </div>
                   <div className='book_btn'>
                     <button>Book Now</button>
+                  </div>
+                  <div className='line'>
+                    <img src={line} alt='line'/>
                   </div>
                 </div>
               </div>

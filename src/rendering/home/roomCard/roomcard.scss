@@ -179,3 +179,18 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    
+    .mainsection2 {
+        .nextArrow {
+            display: none;
+        }
+        .previousArrow{
+            display: none;
+        }
+        .slick-slide {
+            padding: 0;
+        }
+    }
+}

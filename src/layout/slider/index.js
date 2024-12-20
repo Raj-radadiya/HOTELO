@@ -38,7 +38,8 @@ export default function SLIDER() {
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+
     };
     return (
         <div>
@@ -75,7 +76,6 @@ export default function SLIDER() {
                                 <button className="slider_btn">Contact Us</button>
                             </div>
                         </div>
-
                     </Slider>
                 </div>
             </div>
