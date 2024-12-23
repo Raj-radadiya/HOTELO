@@ -11,10 +11,10 @@ export default function Home() {
     <div>
       <Herobanner/>
       <RoomCard/>
-      <Queation/>
-      <CustomerReview/>
-      <TeamMember/>
-      <BlogCard/>
+      {/* <Queation/> */}
+      {/* <CustomerReview/> */}
+      {/* <TeamMember/> */}
+      {/* <BlogCard/> */}
     </div>
   )
 }

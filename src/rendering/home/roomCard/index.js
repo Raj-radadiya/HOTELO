@@ -62,6 +62,15 @@ export default function RoomCard() {
           dots: true
         }
       },
+      {
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
     ]
   };
   return (

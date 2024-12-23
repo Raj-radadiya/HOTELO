@@ -43,6 +43,7 @@
     color: var(--font-color);
     max-width: 920px;
     margin: 0 auto;
+
     @media (max-width:768px) {
         font-size: 40px;
         line-height: 50px;
@@ -62,11 +63,23 @@
     @include font_family;
     font-weight: 600;
     line-height: 1.4;
+
+    @media (max-width:768px) {
+        font-size: 36px;
+    }
+
+    @media (max-width:576px) {
+        font-size: 25px;
+    }
 }
 
 @mixin sectionP {
     font-size: 16px;
     line-height: 1.8;
+
+    @media (max-width:768px) {
+        font-size: 14px;
+    }
 }
 
 @mixin h3 {

@@ -181,16 +181,40 @@
 }
 
 @media (max-width:768px) {
-    
+
     .mainsection2 {
         .nextArrow {
-            display: none;
+            height: 35px;
+            width: 35px;
+            right: 0;
         }
-        .previousArrow{
-            display: none;
+
+        .previousArrow {
+            height: 35px;
+            width: 35px;
+            right: 0;
         }
+
+        .slick-dots {
+            display: none !important;
+        }
+
         .slick-slide {
             padding: 0;
         }
+
+        .roomCard {
+            padding: 0 10px;
+            .roomCardDetails{
+                .roomDescription{
+
+                }
+            }
+        }
+    }
+}
+@media (max-width:576px) {
+    .mainsection{
+        
     }
 }

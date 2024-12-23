@@ -109,7 +109,10 @@
 }
 
 @media (max-width:768px) {
-    .roomCard {
-        padding: 0 20px;
+    .gridThree {
+        .roomCard {
+            padding: 0 10px;
+
+        }
     }
 }

@@ -8,9 +8,9 @@ export default function Rendering() {
   return (
     <div>
         <Home/>
-        <About/>
-        <Pages/>
-        <Blog/>
+        {/* <About/> */}
+        {/* <Pages/> */}
+        {/* <Blog/> */}
     </div>
   )
 }
