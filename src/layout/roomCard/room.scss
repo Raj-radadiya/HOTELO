@@ -8,7 +8,7 @@
         border-radius: 40px;
 
         .roomcardImg {
-            max-height: 285px;
+            height: 285px;
 
             img {
                 border-radius: 5px 5px 0 0;
@@ -110,9 +110,32 @@
 
 @media (max-width:768px) {
     .gridThree {
-        .roomCard {
-            padding: 0 10px;
+        padding: 0 20px;
 
+        .roomCard {
+            margin: 20px 0 0;
+
+            .roomcardImg {
+                height: 230px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .roomCardDetails {
+                padding: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .gridThree {
+        padding: 0 10px;
+
+        .roomCard {
+            margin: 0;
         }
     }
 }

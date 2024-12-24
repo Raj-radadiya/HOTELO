@@ -52,3 +52,60 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .mainsection {
+        .questionMain {
+            gap: 0px;
+
+            .questionLeft {
+                padding: 0 10px;
+
+                .justifyBetween {
+                    padding: 15px 20px;
+                    font-size: 16px;
+                }
+            }
+
+            .questionRight {
+                padding: 0 10px;
+
+                .justifyBetween {
+                    padding: 15px 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .mainsection {
+        .questionMain {
+            gap: 0px;
+            flex-direction: column;
+
+            .questionLeft {
+                width: 100%;
+                padding: 0 20px;
+
+                .justifyBetween {
+                    padding: 15px 20px;
+                    font-size: 14px;
+                }
+            }
+
+            .questionRight {
+                padding: 0 20px;
+                margin: 0;
+                width: 100%;
+
+
+                .justifyBetween {
+                    padding: 15px 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -169,3 +169,44 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .mainsection2 {
+        .sectionTitle {
+            h2 {
+                // padding: 30px 0 0;
+            }
+        }
+
+        .mainsection2 {
+            padding: 0;
+
+            .slick-slide {
+                padding: 0 10px;
+            }
+
+            .memberDetails {
+                padding: 30px 0 0;
+
+                .memberImg {
+                    height: 260px;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .mainsection2 {
+        .mainsection2 {
+            .slick-slide {
+                padding: 0 20px;
+            }
+        }
+    }
+}

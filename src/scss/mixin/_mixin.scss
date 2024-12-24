@@ -10,7 +10,7 @@
 
     @media (max-width:768px) {
         @include gridTwo;
-        gap: 0px;
+        gap: 20px;
     }
 
     @media (max-width:576px) {
@@ -23,6 +23,19 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+
+    @media (max-width:768px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    @media (max-width:576px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        row-gap: 30px;
+    }
 }
 
 @mixin justifyBetween {
@@ -40,6 +53,10 @@
         text-align: center;
         position: relative;
 
+        @media (max-width:576px) {
+            padding: 0 10px;
+        }
+
 
         h2 {
             @include sectionH2;
@@ -51,6 +68,10 @@
             @media (max-width:768px) {
                 padding: 0 40px;
             }
+
+            @media (max-width:576px) {
+                padding: 0;
+            }
         }
 
         &::after {
@@ -61,6 +82,11 @@
             content: "";
             bottom: -30px;
             right: 38%;
+
+            @media (max-width:576px) {
+                right: 50%;
+                transform: translate(50%);
+            }
         }
     }
 }
@@ -109,6 +135,11 @@
 
     h2 {
         margin-bottom: 15px;
+
+        @media (max-width:576px) {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
     }
 
     .pageSource {
@@ -126,6 +157,10 @@
 
             p {
                 font-weight: 600;
+
+                @media (max-width:576px) {
+                    font-size: 14px;
+                }
             }
         }
     }

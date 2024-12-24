@@ -52,3 +52,18 @@
 .mainsection {
     @include mainsection;
 }
+
+@media (max-width:576px) {
+    .aboutCards {
+        .mainsection {
+            .cardFlex {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+                .aboutCard{
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

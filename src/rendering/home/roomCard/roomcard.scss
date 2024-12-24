@@ -192,7 +192,7 @@
         .previousArrow {
             height: 35px;
             width: 35px;
-            right: 0;
+            left: 0;
         }
 
         .slick-dots {
@@ -205,16 +205,22 @@
 
         .roomCard {
             padding: 0 10px;
-            .roomCardDetails{
-                .roomDescription{
 
-                }
+            .roomCardDetails {
+                padding: 24px;
             }
         }
     }
 }
+
 @media (max-width:576px) {
-    .mainsection{
-        
+    .mainsection2 {
+        .nextArrow {
+            display: none;
+        }
+
+        .previousArrow {
+            display: none;
+        }
     }
 }

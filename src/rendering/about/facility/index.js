@@ -1,6 +1,5 @@
 import React from 'react';
 import './facility.scss';
-import tick from '../../../assets/icon/charm--tick.svg';
 import play from '../../../assets/icon/play-svgrepo-com.svg';
 import { TiTick } from "react-icons/ti";
 export default function AboutFacility() {

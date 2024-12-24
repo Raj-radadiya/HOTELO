@@ -6,9 +6,9 @@ import Account from './account'
 export default function Pages() {
   return (
     <div>
-        <Team/>
-        <Booking/>
-        <Account/>
+      <Team />
+      <Booking />
+      <Account />
     </div>
   )
 }

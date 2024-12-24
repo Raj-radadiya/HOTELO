@@ -2,6 +2,7 @@
 
 .blogGrid {
     @include flex;
+    flex-wrap: wrap;
 
     .blogLayoutLeft {
         width: 33.33%;
@@ -258,3 +259,162 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .blogGrid {
+        flex-direction: column;
+
+        .blogLayoutLeft {
+            width: 100%;
+
+            .searchSection {
+                padding: 15px;
+
+                .searchText {
+                    h6 {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .recentPosts {
+                padding: 15px;
+
+                .recentPostsTitle {
+                    h6 {
+                        font-weight: 500;
+                    }
+                }
+
+                .recentPostsDisc {
+                    ul {
+                        li {
+                            a {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .archives {
+                padding: 15px;
+
+                .archivesTitle {
+                    h6 {
+                        font-weight: 500;
+                    }
+                }
+
+                .archivesDisc {
+                    ul {
+                        li {
+                            a {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tags {
+                padding: 15px;
+
+                .tagsTitle {
+                    h6 {
+                        font-weight: 600;
+                    }
+                }
+
+                .tagsBtn {
+                    button {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .blogLayoutRight {
+            width: 100%;
+
+            .blogCard {
+                margin: 20px 15px;
+
+                .blogImg {
+                    height: 280px;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .mainsection {
+        .blogGrid {
+            .blogLayoutLeft {
+                .recentPosts {
+                    margin: 20px 0 0;
+                }
+
+                .archives {
+                    margin: 20px 0 0;
+                }
+
+                .tags {
+                    margin: 20px 0 0;
+                }
+            }
+
+            .blogLayoutRight {
+                display: grid;
+                grid-template-columns: 1fr;
+
+                .blogCard {
+                    margin: 15px 10px;
+
+                    .blogImg {
+                        height: 200px;
+
+                        img {
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .mainsection {
+        .blogGrid {
+            .blogLayoutRight {
+                .blogCard {
+                    .blogInfo {
+                        .blogTitle {
+                            padding-bottom: 10px;
+
+                            a {
+                                font-weight: 500;
+                            }
+                        }
+
+                        .blogLink {
+                            a {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {}

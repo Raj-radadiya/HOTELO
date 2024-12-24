@@ -155,7 +155,8 @@
                 background-image: url(../../../assets/icon/icons8-down-20.png);
                 background-repeat: no-repeat;
                 background-position: right;
-                &:focus{
+
+                &:focus {
                     border: 1px solid var(--hover-color);
                     outline: none;
                 }
@@ -177,6 +178,81 @@
                 width: auto;
                 height: 20px;
             }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .mainsection {
+        .formTitle {
+            h2 {
+                font-size: 28px;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .filterSectionMain {
+            padding: 20px 0 40px;
+        }
+
+        // .formFlex {
+        //     .formName {
+        //         padding: 0 20px;
+        //     }
+        // }
+
+        // .formRoom {
+        //     padding: 0 20px;
+        // }
+    }
+}
+
+@media (max-width:576px) {
+    .mainsection {
+        .formTitle {
+            h2 {
+                font-size: 20px;
+                padding: 0;
+                font-weight: 600;
+            }
+        }
+
+        .filterSectionMain {
+            padding: 0 0 20px;
+        }
+
+        .formFlex {
+            flex-direction: column;
+
+            .formName {
+                width: 100%;
+                margin: 15px 0 0;
+
+                input {
+                    padding: 12px 20px;
+                }
+            }
+        }
+
+        .formRoom {
+            select {
+                padding: 12px 20px;
+            }
+        }
+
+        .formFlex {
+            .formName {
+                select {
+                    padding: 12px 20px;
+                }
+            }
+        }
+
+        .formBtn {
+            width: auto;
+            border-radius: 4px;
+            margin: 20px 20px 0;
         }
     }
 }

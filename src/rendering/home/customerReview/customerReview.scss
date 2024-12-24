@@ -120,3 +120,42 @@
         }
     }
 }
+
+@media (max-width:768px) {
+    .mainsection2 {
+        .reviewMain {
+            .slick-slide {
+                padding: 0 10px;
+            }
+
+            .nextArrow {
+                right: 0;
+            }
+
+            .previousArrow {
+                left: 0;
+            }
+
+            .reviewCard {
+                .contentBg {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .mainsection2 {
+        padding: 0 0 30px;
+        .reviewMain {
+            .nextArrow {
+                display: none;
+            }
+
+            .previousArrow {
+                display: none;
+            }
+        }
+    }
+}

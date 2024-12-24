@@ -54,6 +54,7 @@
 
     @media (max-width:576px) {
         font-size: 25px;
+        line-height: 35px;
     }
 }
 
@@ -65,11 +66,7 @@
     line-height: 1.4;
 
     @media (max-width:768px) {
-        font-size: 36px;
-    }
-
-    @media (max-width:576px) {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
@@ -96,8 +93,16 @@
 
 @mixin mainsection {
     padding: 60px 0;
+
+    @media (max-width:768px) {
+        padding: 40px 0;
+    }
 }
 
 @mixin mainsection2 {
     padding: 0 0 60px;
+
+    @media (max-width:768px) {
+        padding: 0 0 40px;
+    }
 }

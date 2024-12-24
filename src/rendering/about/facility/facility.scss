@@ -137,3 +137,53 @@
         opacity: 0;
     }
 }
+
+@media (max-width:768px) {
+    .mainsection {
+        .aboutFlex {
+            padding: 0 20px;
+            gap: 20px;
+            .aboutLeft{
+                h2{
+                    font-size: 28px;
+                }
+                .aboutSpecification{
+                    .specification{
+                        span{
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .aboutRight {
+                .aboutImg {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .mainsection {
+        .aboutFlex {
+            flex-direction: column;
+
+            .aboutLeft {
+                width: 100%;
+                h2{
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
+            }
+
+            .aboutRight {
+                display: none;
+            }
+        }
+    }
+}

@@ -7,10 +7,10 @@ import Blog from './blog'
 export default function Rendering() {
   return (
     <div>
-        <Home/>
-        {/* <About/> */}
-        {/* <Pages/> */}
-        {/* <Blog/> */}
+      <Home />
+      <About />
+      <Pages />
+      <Blog />
     </div>
   )
 }

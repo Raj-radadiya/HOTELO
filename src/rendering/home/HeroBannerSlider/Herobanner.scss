@@ -93,19 +93,22 @@
 @media (max-width:768px) {
     .availablity_main {
         padding: 0 30px;
+
         .availability_box {
             gap: 20px;
 
             .check_in {
+                padding: 0;
                 width: 40%;
             }
 
             .adult {
                 width: 26%;
+                padding: 0;
             }
 
             .availablity_btn {
-                padding: 0 20px;
+                padding: 0;
                 width: 24%;
             }
         }
@@ -116,21 +119,32 @@
     .availablity_main {
         .availability_box {
             gap: 10px;
+            padding: 20px;
 
             .check_in {
                 width: 100%;
 
                 input {
                     width: 100%;
+                    padding: 10px;
                 }
             }
 
             .adult {
                 width: 100%;
+
+                .adult_select {
+                    padding: 10px;
+                }
             }
 
             .availablity_btn {
                 width: 100%;
+
+                button {
+                    padding: 10px 0;
+                    border-radius: 4px;
+                }
             }
         }
     }

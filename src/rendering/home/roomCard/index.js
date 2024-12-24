@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from "react";
 import Slider from "react-slick";
 import './roomcard.scss';
 import Card from '../../../layout/roomCard';
@@ -68,7 +68,10 @@ export default function RoomCard() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          pauseOnHover: true,
         }
       }
     ]

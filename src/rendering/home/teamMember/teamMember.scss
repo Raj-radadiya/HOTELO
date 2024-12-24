@@ -130,3 +130,38 @@
 
     }
 }
+
+@media (max-width:768px) {
+    .mainsection2 {
+        .gridFour {
+            padding: 40px 0 0;
+            .memberDetails {
+                .memberImg {
+                    height: 260px;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .mainsection2 {
+        .gridFour {
+            .memberDetails {
+                padding: 0 10px;
+
+                .memberImg {
+                    height: 180px;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
