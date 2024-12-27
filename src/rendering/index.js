@@ -3,6 +3,7 @@ import Home from './home'
 import About from './about'
 import Pages from './pages'
 import Blog from './blog'
+import Room from './room Details'
 
 export default function Rendering() {
   return (
@@ -11,6 +12,7 @@ export default function Rendering() {
       <About />
       <Pages />
       <Blog />
+      <Room />
     </div>
   )
 }

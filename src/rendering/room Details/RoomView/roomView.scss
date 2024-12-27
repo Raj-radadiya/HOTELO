@@ -1,0 +1,89 @@
+@import '../../../scss/main';
+
+.containerLg {
+    .roomFlex {
+        @include flex;
+        gap: 40px;
+
+        .RoomViewLeft {
+            width: 66.66%;
+            position: relative;
+
+            .roomImg {
+                img {
+                    height: 615px;
+                }
+            }
+
+            .label {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                @include flex;
+                gap: 30px;
+                padding: 0 10px;
+
+                .photos {
+                    padding: 12px 15px;
+                    background-color: var(--hover-color);
+                    border-radius: 4px;
+                    font-weight: 600;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+                .map {
+                    padding: 12px 15px;
+                    background-color: var(--font-color);
+                    border-radius: 4px;
+                    color: var(--black-color);
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .RoomViewRight {
+            width: 33.33%;
+
+            .roomTitle {
+                margin: 0 0 10px;
+
+                h3 {
+                    font-size: 25px;
+                }
+            }
+
+            .roomPrice {
+                margin: 0 0 15px;
+
+                span {
+                    font-size: 30px;
+                }
+            }
+
+            .roomLocation {
+                @include flex;
+                gap: 15px;
+                margin: 0 0 15px;
+            }
+
+            .roomRating {
+                border: 1px solid var(--font-color);
+                @include flex;
+                align-items: center;
+
+                .roomRatings {
+                    @include flex;
+                    gap: 5px;
+                }
+
+                .share {
+                    padding: 10px;
+                }
+            }
+
+        }
+    }
+}
