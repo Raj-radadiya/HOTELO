@@ -29,44 +29,118 @@ export default function RoomView() {
               <div className='roomDetailsTitle'>
                 <h5>Room Details</h5>
               </div>
-              <div className='roomDetailsInq'>
-                <div className='Details'>
-                  <b>Room ID:</b>
-                  <span>RV100</span>
+              <div className='roomDetailsMain'>
+                <div className='roomDetailsTop'>
+                  <div className='roomDetailsInq'>
+                    <div className='Details'>
+                      <b>Room ID:</b>
+                      <span>RV100</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Price:</b>
+                      <span> $100.00</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Room Size:</b>
+                      <span>200 Sqft</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Bedrooms:</b>
+                      <span>3</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Bathrooms:</b>
+                      <span>2</span>
+                    </div>
+                  </div>
+                  <div className='roomDetailsInq'>
+                    <div className='Details'>
+                      <b>Garage:</b>
+                      <span>2</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Garage Size:</b>
+                      <span> 500 SqFt</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Year Built:</b>
+                      <span>2010-01-01</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Room Type:</b>
+                      <span>Standard</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Room Status:</b>
+                      <span>For Rent</span>
+                    </div>
+                  </div>
                 </div>
-                <div className='Details'>
-                  <b>Price:</b>
-                  <span> $100.00</span>
-                </div>
-                <div className='Details'>
-                  <b>Room Size:</b>
-                  <span>200 Sqft</span>
-                </div>
-                <div className='Details'>
-                  <b>Bedrooms:</b>
-                  <span>3</span>
-                </div>
-                <div className='Details'>
-                  <b>Bathrooms:</b>
-                  <span>2</span>
+                <h6>Additional Details</h6>
+                <div className='roomDetailsTop'>
+                  <div className='roomDetailsInq'>
+                    <div className='Details'>
+                      <b>Deposit:</b>
+                      <span>30%</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Pool Size:</b>
+                      <span> 457 Sqft</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Last Remodel Year:</b>
+                      <span>2020</span>
+                    </div>
+                  </div>
+                  <div className='roomDetailsInq'>
+                    <div className='Details'>
+                      <b>Amenities:</b>
+                      <span>Clubhouse</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Additional Rooms:</b>
+                      <span>Guest Bat</span>
+                    </div>
+                    <div className='Details'>
+                      <b>Equipment</b>
+                      <span>Grill - Gas - Light</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className='roomDetailsInq'>
-                <div className='Details'>
-                  <b>Room ID:</b>
-                  <span>RV100</span>
-                </div>
-                <div className='Details'>
-                  <b>Room ID:</b>
-                  <span>RV100</span>
-                </div>
-                <div className='Details'>
-                  <b>Room ID:</b>
-                  <span>RV100</span>
-                </div>
-                <div className='Details'>
-                  <b>Room ID:</b>
-                  <span>RV100</span>
+            </div>
+            <div className='roomDetails'>
+              <div className='roomDetailsTitle'>
+                <h5>Description</h5>
+              </div>
+              <div className='roomDetailsMain'>
+                <p>Phasellus dictum ipsum nec rutrum tristique. Aliquam a mauris lacinia, condimentum tellus a, mattis nisl. Sed hendrerit viverra elit tempus venenatis. Morbi vel faucibus odio. Nunc vulputate convallis scelerisque. Mauris sollicitudin elit eget ante pharetra, nec suscipit nisl sagittis. Suspendisse euismod a augue pretium dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Sed do eiusmod tempor incididunt dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div className='roomDetails'>
+              <div className='roomDetailsTitle'>
+                <h5>Features</h5>
+              </div>
+              <div className='roomDetailsMain'>
+                <div className='roomDetailsTop'>
+                  <div className='roomDetailsInq'>
+                    <li>TV Cable</li>
+                    <li>Air Conditioning</li>
+                    <li>Barbeque</li>
+                    <li>Gym</li>
+                    <li>Swimming Pool</li>
+                    <li>Laundry</li>
+                    <li>Microwave</li>
+                  </div>
+                  <div className='roomDetailsInq'>
+                    <li>Lawn</li>
+                    <li>Refrigerator</li>
+                    <li>Sauna</li>
+                    <li>Washer</li>
+                    <li>Dryer</li>
+                    <li>WiFi</li>
+                    <li>Outdoor Shower</li>
+                  </div>
                 </div>
               </div>
             </div>

@@ -44,25 +44,60 @@
             }
 
             .roomDetails {
-                @include gridThree;
+                display: flex;
+                padding: 50px 0;
+                border-bottom: 1px solid var(--border-color);
 
                 .roomDetailsTitle {
+                    width: 25%;
+                    flex: 0 0 auto;
+
                     h5 {
                         font-size: 20px;
                     }
                 }
 
-                .roomDetailsInq {
-                    .Details {
-                        b {
-                            font-size: 15px;
-                            margin-right: 5px;
-                        }
+                .roomDetailsMain {
+                    width: 75%;
 
-                        span {
-                            font-size: 14px;
+                    .roomDetailsTop {
+                        display: flex;
+                        margin: 0 0 16px;
+
+                        .roomDetailsInq {
+                            width: 50%;
+                            flex: 0 0 auto;
+
+                            .Details {
+                                margin: 0 0 5px;
+
+                                b {
+                                    font-size: 15px;
+                                    margin-right: 5px;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            li {
+                                list-style-type: square;
+                                margin: 0 0 5px;
+                            }
                         }
                     }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 1.8;
+                    }
+
+                    h6 {
+                        font-size: 16px;
+                        margin: 0 0 8px;
+                    }
+
                 }
             }
         }
@@ -304,6 +339,112 @@
                         font-size: 16px;
                         color: var(--font-color);
                         padding: 15px 30px;
+                        position: relative;
+
+                        &::before,
+                        &::after {
+                            background: var(--hover-color);
+                            position: absolute;
+                            content: "";
+                            width: 50%;
+                            height: 0;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all 0.4s ease-in-out;
+                            z-index: 0;
+                        }
+
+                        &::before {
+                            top: 0;
+                            left: 0;
+                            z-index: -1;
+                        }
+
+                        &::after {
+                            bottom: 0;
+                            right: 0;
+                            z-index: -1;
+                        }
+
+                        &:hover::before,
+                        &:hover::after {
+                            width: 100%;
+                            height: 100%;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .containerLg {
+        .roomFlex {
+            flex-direction: column-reverse;
+            padding: 0 30px;
+
+            .RoomViewLeft {
+                width: 100%;
+
+                .roomImg {
+                    img {
+                        height: 500px;
+                    }
+                }
+
+                .roomDetails {
+                    padding: 40px 0;
+                }
+            }
+
+            .RoomViewRight {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .containerLg {
+        .roomFlex {
+            .RoomViewLeft {
+                .roomImg {
+                    img {
+                        height: 270px;
+                    }
+                }
+
+                .roomDetails {
+                    flex-direction: column;
+                    padding: 20px 0;
+
+                    .roomDetailsTitle {
+                        width: 100%;
+                        margin: 0 0 15px;
+                    }
+
+                    .roomDetailsMain {
+                        width: 100%;
+
+                        .roomDetailsTop {
+                            flex-direction: column;
+                            width: 100%;
+
+                            .roomDetailsInq {
+                                width: 100%;
+
+                                .Details {
+                                    span {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+
                     }
                 }
             }
