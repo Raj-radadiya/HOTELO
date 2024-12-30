@@ -35,16 +35,20 @@ export default function RoomView() {
                   <span>RV100</span>
                 </div>
                 <div className='Details'>
-                  <b>Room ID:</b>
-                  <span>RV100</span>
+                  <b>Price:</b>
+                  <span> $100.00</span>
                 </div>
                 <div className='Details'>
-                  <b>Room ID:</b>
-                  <span>RV100</span>
+                  <b>Room Size:</b>
+                  <span>200 Sqft</span>
                 </div>
                 <div className='Details'>
-                  <b>Room ID:</b>
-                  <span>RV100</span>
+                  <b>Bedrooms:</b>
+                  <span>3</span>
+                </div>
+                <div className='Details'>
+                  <b>Bathrooms:</b>
+                  <span>2</span>
                 </div>
               </div>
               <div className='roomDetailsInq'>
