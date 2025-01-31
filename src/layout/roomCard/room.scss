@@ -1,141 +1,137 @@
-@import '../../scss/main';
+@import "../../scss/main";
 
-.gridThree {
-    @include gridThree;
+.roomCard {
+  margin: 40px 0 0;
+  border-radius: 40px;
+
+  .roomcardImg {
+    height: 285px;
+
+    img {
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .roomCardDetails {
+    position: relative;
+    padding: 35px 24px 24px;
+    background-color: var(--background-color-main);
+    border-radius: 0 0 5px 5px;
+
+    .roomPrice {
+      background-color: var(--hover-color);
+      padding: 4px 16px;
+      position: absolute;
+      top: -13px;
+      left: 24px;
+      border-radius: 4px;
+    }
+
+    .roomTitleRating {
+      @include justifyBetween;
+      margin: 0 0 16px;
+
+      .roomTitle {
+        h5 {
+          @include h5;
+        }
+      }
+
+      .roomRating {
+        @include flex;
+        gap: 3px;
+
+        img {
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+
+    .roomFacility {
+      @include flex;
+      align-items: center;
+      margin: 0 0 16px;
+
+      .roomFacilityItem {
+        @include flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0 16px 0 0;
+        margin: 0 16px 0 0;
+        border-right: 1px solid var(--border);
+
+        img {
+          width: auto;
+        }
+
+        span {
+          text-transform: capitalize;
+        }
+      }
+
+      .roomFacilityItem1 {
+        @include flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0 16px 0 0;
+        margin: 0 16px 0 0;
+      }
+    }
+
+    .roomDescription {
+      margin: 0 0 16px;
+
+      p {
+        @include sectionP;
+      }
+    }
+
+    .roomBtn {
+      @include justifyBetween;
+
+      .viewDetails {
+        @include viewDetails;
+      }
+
+      .BookNow {
+        @include bookNow;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .gridThree {
+    padding: 0 20px;
 
     .roomCard {
-        margin: 40px 0 0;
-        border-radius: 40px;
+      margin: 20px 0 0;
 
-        .roomcardImg {
-            height: 285px;
+      .roomcardImg {
+        height: 230px;
 
-            img {
-                border-radius: 5px 5px 0 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+        img {
+          height: 100%;
         }
+      }
 
-        .roomCardDetails {
-            position: relative;
-            padding: 35px 24px 24px;
-            background-color: var(--background-color-main);
-            border-radius: 0 0 5px 5px;
-
-            .roomPrice {
-                background-color: var(--hover-color);
-                padding: 4px 16px;
-                position: absolute;
-                top: -13px;
-                left: 24px;
-                border-radius: 4px;
-            }
-
-            .roomTitleRating {
-                @include justifyBetween;
-                margin: 0 0 16px;
-
-                .roomTitle {
-                    h5 {
-                        @include h5;
-                    }
-                }
-
-                .roomRating {
-                    @include flex;
-                    gap: 3px;
-
-                    img {
-                        height: 15px;
-                        width: 15px;
-                    }
-                }
-            }
-
-            .roomFacility {
-                @include flex;
-                align-items: center;
-                margin: 0 0 16px;
-
-                .roomFacilityItem {
-                    @include flex;
-                    align-items: center;
-                    gap: 8px;
-                    padding: 0 16px 0 0;
-                    margin: 0 16px 0 0;
-                    border-right: 1px solid var(--border);
-
-                    img {
-                        width: auto;
-                    }
-
-                    span {
-                        text-transform: capitalize;
-                    }
-                }
-
-                .roomFacilityItem1 {
-                    @include flex;
-                    align-items: center;
-                    gap: 8px;
-                    padding: 0 16px 0 0;
-                    margin: 0 16px 0 0;
-                }
-            }
-
-            .roomDescription {
-                margin: 0 0 16px;
-
-                p {
-                    @include sectionP;
-                }
-            }
-
-            .roomBtn {
-                @include justifyBetween;
-
-                .viewDetails {
-                    @include viewDetails;
-                }
-
-                .BookNow {
-                    @include bookNow;
-                }
-            }
-        }
+      .roomCardDetails {
+        padding: 24px;
+      }
     }
+  }
 }
 
-@media (max-width:768px) {
-    .gridThree {
-        padding: 0 20px;
+@media (max-width: 576px) {
+  .gridThree {
+    padding: 0 10px;
 
-        .roomCard {
-            margin: 20px 0 0;
-
-            .roomcardImg {
-                height: 230px;
-
-                img {
-                    height: 100%;
-                }
-            }
-
-            .roomCardDetails {
-                padding: 24px;
-            }
-        }
+    .roomCard {
+      margin: 0;
     }
-}
-
-@media (max-width:576px) {
-    .gridThree {
-        padding: 0 10px;
-
-        .roomCard {
-            margin: 0;
-        }
-    }
+  }
 }

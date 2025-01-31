@@ -15,11 +15,12 @@ import room10 from '../../../assets/image/room-10.jpg';
 import room11 from '../../../assets/image/room-11.jpg';
 import room12 from '../../../assets/image/room-12.jpg';
 import star from '../../../assets/icon/icons8-star-15.png';
-import bed from '../../../assets/icon/material-symbols--bed-outline.svg';
-import bath from '../../../assets/icon/solar--bath-linear.svg';
-import wifi from '../../../assets/icon/material-symbols--wifi-sharp.svg';
+import bed from '../../../assets/icon/bed.svg';
+import bath from '../../../assets/icon/bath.svg';
+import wifi from '../../../assets/icon/wifi.svg';
 import next from '../../../assets/icon/icons8-more-than-14.png';
 import previous from '../../../assets/icon/icons8-back-14.png';
+import { RoomPhoto } from "../../../utils";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -90,7 +91,9 @@ export default function RoomCard() {
         <section>
           <div className='container'>
             <div className='roomcards'>
-              <Card />
+              {RoomPhoto.map((el) => {
+                return <Card el={el} />
+              })}
             </div>
           </div>
         </section>
