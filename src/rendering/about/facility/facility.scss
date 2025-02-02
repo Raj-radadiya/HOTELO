@@ -143,13 +143,15 @@
         .aboutFlex {
             padding: 0 20px;
             gap: 20px;
-            .aboutLeft{
-                h2{
+
+            .aboutLeft {
+                h2 {
                     font-size: 28px;
                 }
-                .aboutSpecification{
-                    .specification{
-                        span{
+
+                .aboutSpecification {
+                    .specification {
+                        span {
                             font-weight: 500;
                         }
                     }
@@ -175,7 +177,8 @@
 
             .aboutLeft {
                 width: 100%;
-                h2{
+
+                h2 {
                     font-size: 20px;
                     margin-top: 20px;
                 }

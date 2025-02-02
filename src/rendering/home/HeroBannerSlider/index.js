@@ -1,6 +1,8 @@
 import React from 'react'
 import './Herobanner.scss'
 import SLIDER from '../../../layout/slider'
+import Input from '../../../layout/input'
+import CommonBtn from '../../../layout/button'
 export default function Herobanner() {
   return (
     <div>
@@ -12,10 +14,11 @@ export default function Herobanner() {
         <div className='container'>
           <div className='availability_box'>
             <div className='check_in'>
-              <input type='text' placeholder='Check In' />
+              <Input placeholder='check In' />
+              {/* <input placeholder='Check In' /> */}
             </div>
             <div className='check_in'>
-              <input type='text' placeholder='Check Out' />
+              <input placeholder='Check Out' />
             </div>
             <div className='adult'>
               <select className='adult_select'>
@@ -54,7 +57,7 @@ export default function Herobanner() {
               </select>
             </div>
             <div className='availablity_btn'>
-              <button>Search</button>
+              <CommonBtn />
             </div>
           </div>
         </div>

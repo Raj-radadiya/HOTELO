@@ -8,6 +8,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaCompressAlt } from "react-icons/fa";
 import { IoIosPrint } from "react-icons/io";
 import manager from '../../../assets/image/member-1.webp';
+import Input from '../../../layout/input';
+import CommonBtn from '../../../layout/button';
 export default function RoomView() {
   return (
     <div>
@@ -202,10 +204,10 @@ export default function RoomView() {
                 </div>
                 <div className='contactFormInput'>
                   <div className='contactInput'>
-                    <input type='email' placeholder='your email address' />
+                    <Input type={'number'} placeholder={'your phone number'}/>
                   </div>
                   <div className='contactInput'>
-                    <input type='number' placeholder='your phone number' />
+                  <Input type={'number'} placeholder={'your phone number'}/>
                   </div>
                   <div className='contactInput'>
                     <textarea rows={5}>write message</textarea>
@@ -215,12 +217,12 @@ export default function RoomView() {
                     <label>I here by agree for processing my personal data.</label>
                   </div>
                   <div className='contactBtn'>
-                    <button>send message</button>
+                    <CommonBtn buttonText={'send message'}/>
                   </div>
                 </div>
               </div>
               <div className='contactBook'>
-                <button>book Now</button>
+                <CommonBtn buttonText={'book now'}/>
               </div>
             </div>
           </div>

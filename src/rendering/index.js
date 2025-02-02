@@ -8,11 +8,11 @@ import Room from './room Details'
 export default function Rendering() {
   return (
     <div>
-      <Home />
+      {/* <Home /> */}
       {/* <About /> */}
       {/* <Pages /> */}
       {/* <Blog /> */}
-      {/* <Room /> */}
+      <Room />
     </div>
   )
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import './blog.scss';
-import blogImg from '../../../assets/image/blogImg.webp';
-import { FaLongArrowAltRight } from "react-icons/fa";
+import BlogCards from '../../../layout/blog';
+import { blog } from '../../../utils';
+
 export default function BlogCard() {
   return (
     <div>
@@ -17,57 +18,9 @@ export default function BlogCard() {
         <section>
           <div className='container'>
             <div className='gridThree'>
-              <div className='blogCard'>
-                <div className='blogImg'>
-                  <img src={blogImg} alt='blogImg' />
-                  <div className='blogLocation'>
-                    <span>Europe</span>
-                  </div>
-                </div>
-                <div className='blogInfo'>
-                  <div className='blogTitle'>
-                    <a href='#'>A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.</a>
-                  </div>
-                  <div className='blogLink'>
-                    <a href='#'>Read More</a>
-                    <FaLongArrowAltRight />
-                  </div>
-                </div>
-              </div>
-              <div className='blogCard'>
-                <div className='blogImg'>
-                  <img src={blogImg} alt='blogImg' />
-                  <div className='blogLocation'>
-                    <span>Europe</span>
-                  </div>
-                </div>
-                <div className='blogInfo'>
-                  <div className='blogTitle'>
-                    <a href='#'>A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.</a>
-                  </div>
-                  <div className='blogLink'>
-                    <a href='#'>Read More</a>
-                    <FaLongArrowAltRight />
-                  </div>
-                </div>
-              </div>
-              <div className='blogCard'>
-                <div className='blogImg'>
-                  <img src={blogImg} alt='blogImg' />
-                  <div className='blogLocation'>
-                    <span>Europe</span>
-                  </div>
-                </div>
-                <div className='blogInfo'>
-                  <div className='blogTitle'>
-                    <a href='#'>A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.</a>
-                  </div>
-                  <div className='blogLink'>
-                    <a href='#'>Read More</a>
-                    <FaLongArrowAltRight />
-                  </div>
-                </div>
-              </div>
+              {blog.map((el)=>{
+                return <BlogCards el={el}/>
+              })}
             </div>
           </div>
         </section>

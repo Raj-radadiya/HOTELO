@@ -2,6 +2,7 @@ import React from 'react';
 import './facility.scss';
 import play from '../../../assets/icon/play-svgrepo-com.svg';
 import { TiTick } from "react-icons/ti";
+import CommonBtn from '../../../layout/button';
 export default function AboutFacility() {
     return (
         <div>
@@ -48,7 +49,7 @@ export default function AboutFacility() {
                                     </div>
                                 </div>
                                 <div className='contactBtn'>
-                                    <button>Contact Us</button>
+                                    <CommonBtn buttonText={'contact us'} />
                                 </div>
                             </div>
                             <div className='aboutRight'>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './room.scss';
+import CommonBtn from '../button';
 
 export default function Card({ el }) {
 
@@ -43,10 +44,10 @@ export default function Card({ el }) {
                 </div>
                 <div className='roomBtn'>
                     <div className='viewDetails'>
-                        <button>view Details</button>
+                        <CommonBtn />
                     </div>
                     <div className='BookNow'>
-                        <button>Book Now</button>
+                        <CommonBtn />
                     </div>
                 </div>
             </div>

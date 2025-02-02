@@ -9,12 +9,12 @@ import BlogCard from './blog'
 export default function Home() {
   return (
     <div>
-      {/* <Herobanner /> */}
+      <Herobanner />
       <RoomCard />
-      {/* <Queation /> */}
-      {/* <CustomerReview /> */}
-      {/* <TeamMember /> */}
-      {/* <BlogCard /> */}
+      <Queation />
+      <CustomerReview />
+      <TeamMember />
+      <BlogCard />
     </div>
   )
 }

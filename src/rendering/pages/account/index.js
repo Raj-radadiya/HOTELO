@@ -1,5 +1,6 @@
 import React from 'react';
 import './account.scss';
+import Input from '../../../layout/input';
 export default function Account() {
     return (
         <div>
@@ -13,8 +14,8 @@ export default function Account() {
                                 </div>
                                 <div className='loginForm'>
                                     <form>
-                                        <input type='email' placeholder='email' />
-                                        <input type='passwrd' placeholder='password' />
+                                        <Input type={'email'} placeholder={'enter email'} />
+                                        <Input type={'password'} placeholder={'password'} />
                                         <div className='rememberPassword'>
                                             <div>
                                                 <input type='checkbox' />
@@ -35,9 +36,9 @@ export default function Account() {
                                 </div>
                                 <div className='loginForm'>
                                     <form>
-                                        <input type='text' placeholder='Full Name' />
-                                        <input type='email' placeholder='email' />
-                                        <input type='passwrd' placeholder='password' />
+                                        <Input placeholder={'Full Namel'} />
+                                        <Input type={'email'} placeholder={'enter  email'} />
+                                        <Input type={'password'} placeholder={'password'} />
                                         <div className='rememberPassword'>
                                             <div>
                                                 <input type='checkbox' />

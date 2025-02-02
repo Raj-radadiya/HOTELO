@@ -1,6 +1,7 @@
 import React from 'react';
 import './bookingform.scss';
 import plus from '../../../assets/icon/ei--plus.svg';
+import Input from '../../../layout/input';
 export default function Booking() {
     return (
         <div>
@@ -30,21 +31,22 @@ export default function Booking() {
                             <div className='formFlex'>
                                 <div className='formName'>
                                     <label>Your Name</label>
-                                    <input type='text' placeholder='Name' />
+                                    {/* <input type='text' placeholder='Name' /> */}
+                                    <Input placeholder={'enter your name'} />
                                 </div>
                                 <div className='formName'>
                                     <label>Address</label>
-                                    <input type='text' placeholder='Address' />
+                                    <Input placeholder={'enter Address'} />
                                 </div>
                             </div>
                             <div className='formFlex'>
                                 <div className='formName'>
                                     <label>Email</label>
-                                    <input type='email' placeholder='Name' />
+                                    <Input placeholder={'enter email'} />
                                 </div>
                                 <div className='formName'>
                                     <label>Phone</label>
-                                    <input type='text' placeholder='Address' />
+                                    <Input placeholder={'enter number'} />
                                 </div>
                             </div>
                             <div className='formRoom'>
@@ -68,21 +70,21 @@ export default function Booking() {
                             <div className='formFlex'>
                                 <div className='formName'>
                                     <label>Starting Date</label>
-                                    <input type='date' />
+                                    <Input type={'date'} />
                                 </div>
                                 <div className='formName'>
                                     <label>Ending Date</label>
-                                    <input type='date' placeholder='date' />
+                                    <Input type={'date'} />
                                 </div>
                             </div>
                             <div className='formFlex'>
                                 <div className='formName'>
                                     <label>Adult</label>
-                                    <input type='number' />
+                                    <Input type={'number'} />
                                 </div>
                                 <div className='formName'>
                                     <label>Child</label>
-                                    <input type='number' />
+                                    <Input type={'number'} />
                                 </div>
                             </div>
                             <div className='formFlex'>

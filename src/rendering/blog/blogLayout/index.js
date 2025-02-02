@@ -2,6 +2,7 @@ import React from 'react';
 import './bloglayout.scss';
 import blogImg from '../../../assets/image/blogImg.webp';
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Input from '../../../layout/input';
 export default function BlogLayout() {
     return (
         <div>
@@ -14,7 +15,7 @@ export default function BlogLayout() {
                                     <h6>Search</h6>
                                 </div>
                                 <div className='searchInput'>
-                                    <input type='text' placeholder='Search' />
+                                    <Input placeholder={'search'} />
                                 </div>
                             </div>
                             <div className='recentPosts'>
@@ -84,7 +85,7 @@ export default function BlogLayout() {
                                             <a href='#'>Ireland</a>
                                         </li>
                                         <li>
-                                            <a href='#'>Dubai</a>WWWWWW
+                                            <a href='#'>Dubai</a>
                                         </li>
                                         <li>
                                             <a href='#'>New York</a>
