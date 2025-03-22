@@ -10,14 +10,16 @@ import { IoIosPrint } from "react-icons/io";
 import manager from '../../../assets/image/member-1.webp';
 import Input from '../../../layout/input';
 import CommonBtn from '../../../layout/button';
-export default function RoomView() {
+export default function RoomView({ room }) {
+  if (!room) return <div>Room not found</div>;
+  
   return (
     <div>
       <div className='containerLg'>
         <div className='roomFlex'>
           <div className='RoomViewLeft'>
             <div className='roomImg'>
-              <img src={RoomViewFirst} alt='room' />
+              <img src={room.roomImg} alt='room' />
             </div>
             <div className='label'>
               <div className='photos'>
@@ -36,45 +38,45 @@ export default function RoomView() {
                   <div className='roomDetailsInq'>
                     <div className='Details'>
                       <b>Room ID:</b>
-                      <span>RV100</span>
+                      <span>{room.id}</span>
                     </div>
                     <div className='Details'>
                       <b>Price:</b>
-                      <span> $100.00</span>
+                      <span>{room.price}</span>
                     </div>
                     <div className='Details'>
                       <b>Room Size:</b>
-                      <span>200 Sqft</span>
+                      <span>{room.roomSize}</span>
                     </div>
                     <div className='Details'>
                       <b>Bedrooms:</b>
-                      <span>3</span>
+                      <span>{room.bedrooms}</span>
                     </div>
                     <div className='Details'>
                       <b>Bathrooms:</b>
-                      <span>2</span>
+                      <span>{room.bathrooms}</span>
                     </div>
                   </div>
                   <div className='roomDetailsInq'>
                     <div className='Details'>
                       <b>Garage:</b>
-                      <span>2</span>
+                      <span>{room.garage}</span>
                     </div>
                     <div className='Details'>
                       <b>Garage Size:</b>
-                      <span> 500 SqFt</span>
+                      <span>{room.garageSize}</span>
                     </div>
                     <div className='Details'>
                       <b>Year Built:</b>
-                      <span>2010-01-01</span>
+                      <span>{room.yearBuilt}</span>
                     </div>
                     <div className='Details'>
                       <b>Room Type:</b>
-                      <span>Standard</span>
+                      <span>{room.roomType}</span>
                     </div>
                     <div className='Details'>
                       <b>Room Status:</b>
-                      <span>For Rent</span>
+                      <span>{room.roomStatus}</span>
                     </div>
                   </div>
                 </div>
@@ -83,29 +85,29 @@ export default function RoomView() {
                   <div className='roomDetailsInq'>
                     <div className='Details'>
                       <b>Deposit:</b>
-                      <span>30%</span>
+                      <span>{room.deposit}</span>
                     </div>
                     <div className='Details'>
                       <b>Pool Size:</b>
-                      <span> 457 Sqft</span>
+                      <span>{room.poolSize}</span>
                     </div>
                     <div className='Details'>
                       <b>Last Remodel Year:</b>
-                      <span>2020</span>
+                      <span>{room.lastRemodelYear}</span>
                     </div>
                   </div>
                   <div className='roomDetailsInq'>
                     <div className='Details'>
                       <b>Amenities:</b>
-                      <span>Clubhouse</span>
+                      <span>{room.amenities}</span>
                     </div>
                     <div className='Details'>
                       <b>Additional Rooms:</b>
-                      <span>Guest Bat</span>
+                      <span>{room.additionalRooms}</span>
                     </div>
                     <div className='Details'>
                       <b>Equipment</b>
-                      <span>Grill - Gas - Light</span>
+                      <span>{room.equipment}</span>
                     </div>
                   </div>
                 </div>
@@ -116,7 +118,7 @@ export default function RoomView() {
                 <h5>Description</h5>
               </div>
               <div className='roomDetailsMain'>
-                <p>Phasellus dictum ipsum nec rutrum tristique. Aliquam a mauris lacinia, condimentum tellus a, mattis nisl. Sed hendrerit viverra elit tempus venenatis. Morbi vel faucibus odio. Nunc vulputate convallis scelerisque. Mauris sollicitudin elit eget ante pharetra, nec suscipit nisl sagittis. Suspendisse euismod a augue pretium dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Sed do eiusmod tempor incididunt dolore magna aliqua.</p>
+                <p>{room.description}</p>
               </div>
             </div>
             <div className='roomDetails'>
@@ -149,14 +151,14 @@ export default function RoomView() {
           </div>
           <div className='RoomViewRight'>
             <div className='roomTitle'>
-              <h3>Single Room</h3>
+              <h3>{room.title}</h3>
             </div>
             <div className='roomPrice'>
-              <span>$100.00</span>
+              <span>{room.price}</span>
             </div>
             <div className='roomLocation'>
               <MdOutlineAddLocation />
-              <p>123 Western Road Melbourne, United Kingdom.</p>
+              <p>{room.location}</p>
             </div>
             <div className='roomRating'>
               <div className='roomRatings'>

@@ -1,5 +1,8 @@
+import roomImg from '../assets/image/room-2.jpg'
+import roomImg2 from '../assets/image/room-3.jpg'
 export const RoomPhoto = [
     {
+        id: 1,
         roomImg: require('../assets/image/room-1.jpg'),
         price: "$100 / night",
         roomTitle: "Single Room",
@@ -13,7 +16,8 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
-        roomImg: require('../assets/image/room-2.jpg'),
+        id: 2,
+        roomImg: roomImg,
         price: "$120 / night",
         roomTitle: "Double Room",
         star: require('../assets/icon/icons8-star-15.png'),
@@ -26,7 +30,8 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
-        roomImg: require('../assets/image/room-3.jpg'),
+        id: 3,
+        roomImg: roomImg2,
         price: "$140 / night",
         roomTitle: "Triple Room",
         star: require('../assets/icon/icons8-star-15.png'),
@@ -39,6 +44,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 4,
         roomImg: require('../assets/image/room-1.jpg'),
         price: "$100 / night",
         roomTitle: "Quad Room",
@@ -52,6 +58,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 5,
         roomImg: require('../assets/image/room-2.jpg'),
         price: "$120 / night",
         roomTitle: "Queen Room",
@@ -65,6 +72,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 6,
         roomImg: require('../assets/image/room-3.jpg'),
         price: "$140 / night",
         roomTitle: "King Room",
@@ -78,6 +86,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 7,
         roomImg: require('../assets/image/room-1.jpg'),
         price: "$100 / night",
         roomTitle: "Twin  Room",
@@ -91,6 +100,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 8,
         roomImg: require('../assets/image/room-2.jpg'),
         price: "$120 / night",
         roomTitle: "Studio Room",
@@ -104,6 +114,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 9,
         roomImg: require('../assets/image/room-3.jpg'),
         price: "$140 / night",
         roomTitle: "Standard Room",
@@ -117,6 +128,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 10,
         roomImg: require('../assets/image/room-1.jpg'),
         price: "$100 / night",
         roomTitle: "Deluxe Room",
@@ -130,6 +142,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 11,
         roomImg: require('../assets/image/room-2.jpg'),
         price: "$120 / night",
         roomTitle: "Superior Room",
@@ -143,6 +156,7 @@ export const RoomPhoto = [
         para: "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
     },
     {
+        id: 12,
         roomImg: require('../assets/image/room-3.jpg'),
         price: "$140 / night",
         roomTitle: "Presidential Room",
@@ -214,23 +228,23 @@ export const Partner = [
         partnerImg: require('../assets/image/member-1.webp')
     }
 ]
-export const blog=[
+export const blog = [
     {
-        blogImg:require('../assets/image/blogImg.webp'),
-        location:'europe',
-        blogTitle:'A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.',
-        blogLink:'Read More'
+        blogImg: require('../assets/image/blogImg.webp'),
+        location: 'europe',
+        blogTitle: 'A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.',
+        blogLink: 'Read More'
     },
     {
-        blogImg:require('../assets/image/blogImg.webp'),
-        location:'europe',
-        blogTitle:'A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.',
-        blogLink:'Read More'
+        blogImg: require('../assets/image/blogImg.webp'),
+        location: 'europe',
+        blogTitle: 'A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.',
+        blogLink: 'Read More'
     },
     {
-        blogImg:require('../assets/image/blogImg.webp'),
-        location:'europe',
-        blogTitle:'A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.',
-        blogLink:'Read More'
+        blogImg: require('../assets/image/blogImg.webp'),
+        location: 'europe',
+        blogTitle: 'A Behind the Scenes Look at Metro Hotels’ Direct Channel Success.',
+        blogLink: 'Read More'
     },
 ]

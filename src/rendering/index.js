@@ -8,10 +8,10 @@ import Room from './room Details'
 export default function Rendering() {
   return (
     <div>
-      {/* <Home /> */}
-      {/* <About /> */}
-      {/* <Pages /> */}
-      {/* <Blog /> */}
+      <Home />
+      <About />
+      <Pages />
+      <Blog />
       <Room />
     </div>
   )

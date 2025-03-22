@@ -152,10 +152,14 @@
                     height: 20px;
                 }
 
-                span:hover {
-                    color: var(--hover-color);
-                    transition: 0.3s ease-in-out;
+                span {
                     cursor: pointer;
+                    color: var(--font-color);
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: var(--hover-color);
+                    }
                 }
             }
         }

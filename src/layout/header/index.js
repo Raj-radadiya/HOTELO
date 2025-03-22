@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 import './header.scss'
 import call from '../../assets/icon/icons8-call-20.png';
 import mail from '../../assets/icon/icons8-mail-20.png';
@@ -20,6 +21,8 @@ import russia from '../../assets/icon/russia.jpg';
 import Italy from '../../assets/icon/italy.jpg';
 import line from '../../assets/icon/ic--round-menu.svg';
 export default function Header() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className='header_main'>
@@ -106,7 +109,7 @@ export default function Header() {
 
                 <div className='login'>
                   <img src={man} alt='man' />
-                  <span>Login/Register</span>
+                  <span onClick={() => navigate('/account')}>Login/Register</span>
                 </div>
               </div>
             </div>
@@ -120,12 +123,11 @@ export default function Header() {
               </div>
               <div className='header_bottom_right'>
                 <div className='nav_link'>
-                  <a href='#'>Home </a>
-                  <a href='#'>About Us </a>
-                  <a href='#'>Our Rooms  </a>
-                  <a href='#'>Pages </a>
-                  <a href='#'>Blog </a>
-                  <a href='#'>Contact </a>
+                  <a href='/'>Home </a>
+                  <a href='/about'>About Us </a>
+                  <a href='/ourRooms'>Our Rooms  </a>
+                  <a href='/blog'>Blog </a>
+                  <a href='/ourTeams'>our Teams</a>
                 </div>
                 <div className='header_btn'>
                   <div className='search_btn'>
@@ -136,7 +138,7 @@ export default function Header() {
                     <button>Book Now</button>
                   </div>
                   <div className='line'>
-                    <img src={line} alt='line'/>
+                    <img src={line} alt='line' />
                   </div>
                 </div>
               </div>

@@ -53,12 +53,6 @@ export default function AboutCard() {
                     </div>
                 </div>
             </div>
-            <div className='customerReview'>
-                <CustomerReview />
-            </div>
-            <div className='mainsection'>
-                <TeamMember />
-            </div>
         </div>
     )
 }

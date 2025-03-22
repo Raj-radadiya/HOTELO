@@ -65,7 +65,8 @@
         border-right: 1px solid var(--border);
 
         img {
-          width: auto;
+          width: 20px;  // Fixed width for facility icons
+          height: 20px; // Fixed height for facility icons
         }
 
         span {
@@ -79,6 +80,11 @@
         gap: 8px;
         padding: 0 16px 0 0;
         margin: 0 16px 0 0;
+
+        img {
+          width: 20px;  // Fixed width for facility icons
+          height: 20px; // Fixed height for facility icons
+        }
       }
     }
 
